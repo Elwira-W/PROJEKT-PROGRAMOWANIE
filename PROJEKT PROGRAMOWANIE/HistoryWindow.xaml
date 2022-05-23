@@ -1,0 +1,26 @@
+﻿<Window x:Class="PROJEKT_PROGRAMOWANIE.HistoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PROJEKT_PROGRAMOWANIE"
+        mc:Ignorable="d"
+        Title="HistoryWindow" Height="450" Width="800"
+        WindowStartupLocation="Manual"
+        Left="150" Top="150">
+    <Grid>
+        <Calendar SelectionMode="MultipleRange" DisplayMode="Year"  RenderTransformOrigin="0.5,0.5" Margin="116,47,370,196" SelectedDatesChanged="Calendar_SelectedDatesChanged">
+            <Calendar.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.088"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Calendar.RenderTransform>
+        </Calendar>
+        <Button x:Name="Powrot" Content="Powrót" HorizontalAlignment="Left" Margin="23,47,0,0" VerticalAlignment="Top" Width="74" Height="41" Click="Powrot_Click"/>
+        <ListBox x:Name="LBHistoria" HorizontalAlignment="Left" Height="343" Margin="409,47,0,0" VerticalAlignment="Top" Width="310"/>
+
+    </Grid>
+</Window>
