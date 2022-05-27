@@ -23,7 +23,7 @@ namespace PROJEKT_PROGRAMOWANIE
         void Wyczysc()              //metoda czyszcząca pola login i haslo
         {
             TBLogin.Clear();
-            TBHaslo.Clear();
+            PBHaslo.Clear();
         }
 
         void OtworzOknoGlowne()     //metoda zawierająca instrukcje umożliwiające otwarcie okna glownego
@@ -43,11 +43,11 @@ namespace PROJEKT_PROGRAMOWANIE
         {
             if (Sprawdz.SprawdzPoprawnoscLoginu(TBLogin.Text))
             {
-                if (Sprawdz.SprawdzPoprawnoscHasla(TBHaslo.Text))
+                if (Sprawdz.SprawdzPoprawnoscHasla(PBHaslo.Password))
                 {
                     if (!Logowanie.SprawdzUzytkownika(TBLogin.Text))
                     {
-                        if (Logowanie.SprawdzHaslo(TBLogin.Text, TBHaslo.Text))
+                        if (Logowanie.SprawdzHaslo(TBLogin.Text, PBHaslo.Password))
                         {
                             MessageBox.Show("Zalogowano pomyślnie");
 
@@ -74,14 +74,14 @@ namespace PROJEKT_PROGRAMOWANIE
             {
                 if (Logowanie.SprawdzUzytkownika(TBLogin.Text))
                 {
-                    if (Sprawdz.SprawdzPoprawnoscHasla(TBHaslo.Text))
+                    if (Sprawdz.SprawdzPoprawnoscHasla(PBHaslo.Password))
                     {
-                        Rejestracja.NowyUzytkownik(TBLogin.Text, TBHaslo.Text);
+                        Rejestracja.NowyUzytkownik(TBLogin.Text, PBHaslo.Password);
                         MessageBox.Show("Zarejestrowano pomyślnie. Zaloguj się");
                         Wyczysc();
                     }
                 }
-                else if (TBHaslo.Text == "")
+                else if (PBHaslo.Password == "")
                 {
                     MessageBox.Show("Pole hasło nie może być puste!");
                 } else

@@ -15,7 +15,7 @@
         </Grid.ColumnDefinitions>
         <Button x:Name="BTLogowanie" Content="Logowanie" HorizontalAlignment="Left" Margin="79,199,0,0" VerticalAlignment="Top" Width="235" Click="BT_Logowanie_Click" Height="26" Grid.Column="1"/>
         <TextBox x:Name="TBLogin" HorizontalAlignment="Left" Height="23" Margin="144,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170" Grid.Column="1"/>
-        <TextBox x:Name="TBHaslo" HorizontalAlignment="Left" Height="23" Margin="144,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="170" Grid.Column="1"/>
+        <PasswordBox x:Name="PBHaslo" PasswordChar="*" HorizontalAlignment="Left" Height="23" Margin="144,132,0,0" VerticalAlignment="Top" Width="170" Grid.Column="1"/>
         <Button x:Name="BTRejestracja" Content="Rejestracja" HorizontalAlignment="Left" Margin="79,247,0,0" VerticalAlignment="Top" Width="235" Click="BT_Rejestracja_Click" Height="28" Grid.Column="1"/>
         <Label Content="Login" HorizontalAlignment="Left" Margin="79,84,0,0" VerticalAlignment="Top" Grid.Column="1" Width="52"/>
         <Label Content="Hasło" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="79,132,0,0" VerticalAlignment="Top" Width="52"/>
