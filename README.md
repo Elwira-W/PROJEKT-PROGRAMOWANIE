@@ -1,4 +1,10 @@
 # PROJEKT-PROGRAMOWANIE
+ENG version ---------------------------------------------------------
+Program created for a final projet in programming.
+
+
+
+
 
 Program stworzony na projekt zaliczeniowy z programowania.
 
