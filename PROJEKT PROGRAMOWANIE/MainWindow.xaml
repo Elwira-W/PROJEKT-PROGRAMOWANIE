@@ -7,35 +7,37 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
         WindowStartupLocation="Manual"
-        Left="150" Top="150">
-    <Grid>
-        <Button x:Name="ZapiszDane" Content="zapisz do pliku .txt" HorizontalAlignment="Left" Margin="437,305,0,0" VerticalAlignment="Top" Width="189" Height="34" Click="ZapiszDane_Click"/>
-        <Label Content="Użytkownik:" HorizontalAlignment="Left" Margin="437,44,0,0" VerticalAlignment="Top" Width="74"/>
-        <TextBox x:Name="TBUzytkownik" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="529,47,0,0"/>
-        <TextBox x:Name="TBWaga" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="185,43,0,0"/>
-        <TextBox x:Name="TBWzrost" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="185,86,0,0"/>
-        <TextBox x:Name="TBObwodTalia" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="185,126,0,0"/>
-        <TextBox x:Name="TBObwodBiodra" HorizontalAlignment="Left" Height="23" Margin="185,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="TBWiek" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="185,207,0,0"/>
-        <ComboBox x:Name="CBPlec" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="185,249,0,0" SelectionChanged="CBPlec_SelectionChanged"/>
-        <ComboBox x:Name="CBAktywnosc" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="185,290,0,0" SelectionChanged="CBAktywnosc_SelectionChanged"/>
-        <ComboBox x:Name="CBCel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="185,327,0,0" SelectionChanged="CBCel_SelectionChanged"/>
-        <Label Content="waga" HorizontalAlignment="Left" Margin="55,43,0,0" VerticalAlignment="Top" Width="80" Height="34"/>
-        <Label Content="wzrost" HorizontalAlignment="Left" Margin="55,82,0,0" VerticalAlignment="Top" Width="80" Height="23"/>
-        <Label Content="obwód w talii" HorizontalAlignment="Left" Margin="55,126,0,0" VerticalAlignment="Top" Width="80" Height="23"/>
-        <Label Content="wiek" HorizontalAlignment="Left" Margin="55,207,0,0" VerticalAlignment="Top" Width="80" Height="23"/>
-        <Label Content="płeć" HorizontalAlignment="Left" Margin="55,248,0,0" VerticalAlignment="Top" Width="80" Height="41"/>
-        <Label Content="aktywność fizyczna" HorizontalAlignment="Left" Margin="55,294,0,0" VerticalAlignment="Top" Width="110" Height="31"/>
-        <Label Content="cel" HorizontalAlignment="Left" Margin="55,327,0,0" VerticalAlignment="Top" Width="110" Height="32"/>
-        <ListBox x:Name="LBWyniki" HorizontalAlignment="Left" Height="176" Margin="437,95,0,0" VerticalAlignment="Top" Width="323">
+        Left="500" Top="250">
+    <Grid Background="#FF1D1D1D">
+        <Button x:Name="ZapiszDane" Content="zapisz do pliku .txt" HorizontalAlignment="Left" Margin="417,312,0,0" VerticalAlignment="Top" Width="206" Height="40" Click="ZapiszDane_Click" FontSize="16" Foreground="White" BorderBrush="#FFA6A6A6" Background="#FF00ADFD"/>
+        <Label Content="Użytkownik:" HorizontalAlignment="Left" Margin="420,33,0,0" VerticalAlignment="Top" Width="104" Background="#FF1D1D1D" Foreground="White" FontSize="16"/>
+        <TextBox x:Name="TBUzytkownik" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="529,36,0,0" FontSize="16" Background="#FFDADCE0"/>
+        <TextBox x:Name="TBWaga" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="186,31,0,0" FontSize="16" Background="#FFDADCE0"/>
+        <TextBox x:Name="TBWzrost" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="186,74,0,0" FontSize="16" Background="#FFDADCE0"/>
+        <TextBox x:Name="TBObwodTalia" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="186,114,0,0" FontSize="16" Background="#FFDADCE0"/>
+        <TextBox x:Name="TBObwodBiodra" HorizontalAlignment="Left" Height="23" Margin="186,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16" Background="#FFDADCE0"/>
+        <TextBox x:Name="TBWiek" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="186,195,0,0" FontSize="16" Background="#FFDADCE0"/>
+        <ComboBox x:Name="CBPlec" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="186,237,0,0" SelectionChanged="CBPlec_SelectionChanged" FontSize="16" Background="#FFDADCE0"/>
+        <ComboBox x:Name="CBAktywnosc" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="186,278,0,0" SelectionChanged="CBAktywnosc_SelectionChanged" FontSize="16" Background="#FFDADCE0"/>
+        <ComboBox x:Name="CBCel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="186,315,0,0" SelectionChanged="CBCel_SelectionChanged" FontSize="16" Background="#FFDADCE0"/>
+        <Grid Margin="36,31,594,72">
+            <Label Content="waga" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Height="34" Background="#FF1D1D1D" Foreground="White" FontSize="16"/>
+            <Label Content="wzrost" HorizontalAlignment="Left" Margin="0,39,0,0" VerticalAlignment="Top" Width="80" Height="39" Background="#FF1D1D1D" FontSize="16" Foreground="White"/>
+            <Label Content="obwód w talii" HorizontalAlignment="Left" Margin="0,83,0,0" VerticalAlignment="Top" Width="110" Height="36" Background="#FF1D1D1D" FontSize="16" Foreground="White"/>
+            <Label Content="wiek" HorizontalAlignment="Left" Margin="0,164,0,0" VerticalAlignment="Top" Width="95" Height="36" Background="#FF1D1D1D" FontSize="16" Foreground="White"/>
+            <Label Content="płeć" HorizontalAlignment="Left" Margin="0,205,0,0" VerticalAlignment="Top" Width="80" Height="41" Background="#FF1D1D1D" FontSize="16" Foreground="White"/>
+            <Label Content="aktywność fizyczna" HorizontalAlignment="Left" Margin="0,251,0,0" VerticalAlignment="Top" Width="142" Height="31" Background="#FF1D1D1D" FontSize="16" Foreground="White"/>
+            <Label Content="cel" HorizontalAlignment="Left" Margin="0,284,0,0" VerticalAlignment="Top" Width="110" Height="32" Background="#FF1D1D1D" FontSize="16" Foreground="White"/>
+            <Label Content="obwód w biodrach" HorizontalAlignment="Left" Margin="0,124,0,0" VerticalAlignment="Top" Background="#FF1D1D1D" FontSize="16" Foreground="White"/>
+        </Grid>
+        <ListBox x:Name="LBWyniki" HorizontalAlignment="Left" Height="214" Margin="420,79,0,0" VerticalAlignment="Top" Width="340" FontSize="16" Background="#FFDADCE0">
         </ListBox>
-        <Button x:Name="Historia" Content="historia" HorizontalAlignment="Left" Margin="644,305,0,0" VerticalAlignment="Top" Width="116" Height="34" Click="Historia_Click"/>
-        <Button x:Name="Policz" Content="Policz" HorizontalAlignment="Left" Margin="185,371,0,0" VerticalAlignment="Top" Width="120" Click="Policz_Click"/>
-        <Button x:Name="WyczyscDane" Content="Wyczyść wszystko" HorizontalAlignment="Left" Margin="437,355,0,0" VerticalAlignment="Top" Width="189" Click="WyczyscDane_Click" Height="22"/>
-        <Button x:Name="Wyloguj" Content="Wyloguj" HorizontalAlignment="Left" Margin="679,47,0,0" VerticalAlignment="Top" Width="81" Height="23" Click="Wyloguj_Click"/>
-        <Label Content="obwód w biodrach" HorizontalAlignment="Left" Margin="55,167,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="WyczyscWyniki" Content="Wyczyść wyniki" HorizontalAlignment="Left" Margin="644,355,0,0" VerticalAlignment="Top" Width="119" Height="22" Click="WyczyscWyniki_Click"/>
-        <CheckBox x:Name="InfoAktywnosc" Margin="324,294,437,94">
+        <Button x:Name="Historia" Content="historia" HorizontalAlignment="Left" Margin="641,312,0,0" VerticalAlignment="Top" Width="119" Height="40" Click="Historia_Click" FontSize="16" Foreground="White" BorderBrush="#FFA6A6A6" Background="#FF00ADFD"/>
+        <Button x:Name="Policz" Content="Policz" HorizontalAlignment="Left" Margin="186,357,0,0" VerticalAlignment="Top" Width="120" Click="Policz_Click" Height="40" FontSize="16" Foreground="White" BorderBrush="#FFA6A6A6" Background="#FF00ADFD"/>
+        <Button x:Name="WyczyscDane" Content="Wyczyść wszystko" HorizontalAlignment="Left" Margin="417,362,0,0" VerticalAlignment="Top" Width="206" Click="WyczyscDane_Click" Height="35" FontSize="16" Foreground="White" BorderBrush="#FFA6A6A6" Background="#FF77ABC3"/>
+        <Button x:Name="Wyloguj" Content="Wyloguj" HorizontalAlignment="Left" Margin="679,36,0,0" VerticalAlignment="Top" Width="81" Height="28" Click="Wyloguj_Click" FontSize="16" Foreground="White" BorderBrush="#FFA6A6A6" Background="#FF00ADFD"/>
+        <Button x:Name="WyczyscWyniki" Content="Wyczyść wyniki" HorizontalAlignment="Left" Margin="641,362,0,0" VerticalAlignment="Top" Width="119" Height="35" Click="WyczyscWyniki_Click" FontSize="16" Foreground="White" BorderBrush="#FFA6A6A6" Background="#FF77ABC3"/>
+        <CheckBox x:Name="InfoAktywnosc" Margin="325,282,436,106">
             <WrapPanel>
                 <Popup IsOpen="{Binding ElementName=InfoAktywnosc, Path=IsChecked}" Placement="Right" PopupAnimation="Fade" AllowsTransparency="True" VerticalOffset="-30" HorizontalOffset="5">
                     <TextBox x:Name="TBInfoAktywnosc" MinWidth="100" MinHeight="70" Height="80" Width="435"></TextBox>

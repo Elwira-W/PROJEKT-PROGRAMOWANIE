@@ -7,20 +7,31 @@
         mc:Ignorable="d"
         Title="HistoryWindow" Height="450" Width="800"
         WindowStartupLocation="Manual"
-        Left="150" Top="150">
-    <Grid>
-        <Calendar SelectionMode="MultipleRange" DisplayMode="Year"  RenderTransformOrigin="0.5,0.5" Margin="116,47,370,196" SelectedDatesChanged="Calendar_SelectedDatesChanged">
-            <Calendar.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-0.088"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Calendar.RenderTransform>
-        </Calendar>
-        <Button x:Name="Powrot" Content="Powrót" HorizontalAlignment="Left" Margin="23,47,0,0" VerticalAlignment="Top" Width="74" Height="41" Click="Powrot_Click"/>
-        <ListBox x:Name="LBHistoria" HorizontalAlignment="Left" Height="343" Margin="409,47,0,0" VerticalAlignment="Top" Width="310"/>
+        Left="500" Top="250">
+    <Grid Background="#FF1D1D1D">
+        <Grid Margin="87,48,102,28">
+            <Calendar SelectionMode="MultipleRange" DisplayMode="Year"  RenderTransformOrigin="0.5,0.5" Margin="0,0,297,167" SelectedDatesChanged="Calendar_SelectedDatesChanged">
+                <Calendar.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFE4EAF0" Offset="0"/>
+                        <GradientStop Color="#FFECF0F4" Offset="0.16"/>
+                        <GradientStop Color="#FFFCFCFD" Offset="0.16"/>
+                        <GradientStop Color="#FFDADCE0" Offset="1"/>
+                    </LinearGradientBrush>
+                </Calendar.Background>
+                <Calendar.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.088"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Calendar.RenderTransform>
+            </Calendar>
+            <Button x:Name="Powrot" Content="Powrót" HorizontalAlignment="Left" Margin="106,205,0,0" VerticalAlignment="Top" Width="99" Height="49" Click="Powrot_Click" FontSize="16" Foreground="White" Background="#FF00ADFD"/>
+            <ListBox x:Name="LBHistoria" HorizontalAlignment="Left" Height="343" Margin="310,0,-17,0" VerticalAlignment="Top" Width="310" Background="#FFDADCE0"/>
+
+        </Grid>
 
     </Grid>
 </Window>
