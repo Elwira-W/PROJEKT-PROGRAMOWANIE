@@ -1,7 +1,7 @@
 # PROJEKT-PROGRAMOWANIE
 ENG version ---------------------------------------------------------
 
-Program created for a final project in programmin at university.
+Program created for a final project in programming at my university.
 
 It allows you to calculate four indicators: BMI (Body Mass Index), WHR (Waist Hip Ratio), caloric demand and ideal weight.
 
@@ -12,6 +12,7 @@ In the login window, the user can register by entering login and password. After
 In the main window, the user enters the following data: height, weight, waist circumference, hip circumference, age, gender, physical activity and goal (either of: weight loss, weight maintenance, weight gain). After clicking the "Policz" button, the results are printed in the listbox on the right. The user can choose to save the results to a text file by clicking the "Zapisz do pliku .txt" button. If such file does not exist, new text file named "loginDane.txt" is created and the data is saved in it. The user can also clear all textboxes, comboboxes and listbox by clicking "Wyczyść wszystko" or only listbox with results by clicking "Wyczyść wyniki". From this window user can also log out, or check history by clicking the "Historia" button.
 
 A history window then opens, where the user can select a date (or a date range) using the calendar. History results are read from the "loginDane.txt" file and displayed in the listbox on the go. After clicking the "Powrót" button, the history window closes and the user returns to the main window.
+
 
 PL version ---------------------------------------------------------
 
