@@ -14,6 +14,7 @@ In the main window, the user enters the following data: height, weight, waist ci
 A history window then opens, where the user can select a date (or a date range) using the calendar. History results are read from the "loginDane.txt" file and displayed in the listbox on the go. After clicking the "Powrót" button, the history window closes and the user returns to the main window.
 
 PL version ---------------------------------------------------------
+
 Program stworzony na projekt zaliczeniowy z programowania.
 
 Pozwala on na wyliczenie czterech wskaźników: BMI (Body Mass Index), WHR (Waist-Hip Ratio), zapotrzebowania kalorycznego i wagi idealnej.
