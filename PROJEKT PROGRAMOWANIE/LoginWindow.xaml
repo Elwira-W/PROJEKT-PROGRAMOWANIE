@@ -9,14 +9,14 @@
         WindowStartupLocation="Manual"
         Left="500" Top="250" Background="#FF6A6A6A">
     <Grid Background="#FF1D1D1D" Margin="0,0,0,-3">
-        <Grid.ColumnDefinitions>
-        </Grid.ColumnDefinitions>
-        <Button x:Name="BTLogowanie" Content="Logowanie" HorizontalAlignment="Left" Margin="357,297,0,0" VerticalAlignment="Top" Width="146" Click="BT_Logowanie_Click" Height="46" Foreground="White" FontSize="18" Background="#FF00ADFD"/>
-        <TextBox x:Name="TBLogin" HorizontalAlignment="Left" Height="35" Margin="174,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="329" Foreground="Black" FontSize="18" Background="#FFDADCE0" BorderBrush="#FFDADCE0"/>
-        <PasswordBox x:Name="PBHaslo" PasswordChar="*" HorizontalAlignment="Left" Height="35" Margin="174,240,0,0" VerticalAlignment="Top" Width="329" Foreground="Black" FontSize="18" Background="#FFDADCE0" BorderBrush="#FFDADCE0"/>
-        <Button x:Name="BTRejestracja" Content="Rejestracja" HorizontalAlignment="Left" Margin="174,297,0,0" VerticalAlignment="Top" Width="146" Click="BT_Rejestracja_Click" Height="46" Foreground="White" FontSize="18" Background="#FFB0B0B0"/>
-        <Label Content="Login" HorizontalAlignment="Left" Margin="174,109,0,0" VerticalAlignment="Top" Width="55" FontSize="18" Height="36" Foreground="White"/>
-        <Label Content="Hasło" HorizontalAlignment="Left" Height="35" Margin="174,205,0,0" VerticalAlignment="Top" Width="55" FontSize="18" Foreground="White"/>
-
+        <Grid Margin="187,124,176,64">
+            <Button x:Name="BTLogowanie" Content="Logowanie" HorizontalAlignment="Left" Margin="183,188,0,0" VerticalAlignment="Top" Width="146" Click="BT_Logowanie_Click" Height="46" Foreground="White" FontSize="18" Background="#FF00ADFD"/>
+            <TextBox x:Name="TBLogin" HorizontalAlignment="Left" Height="35" Margin="0,41,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="329" Foreground="Black" FontSize="18" Background="#FFDADCE0" BorderBrush="#FFDADCE0"/>
+            <PasswordBox x:Name="PBHaslo" PasswordChar="*" HorizontalAlignment="Left" Height="35" Margin="0,131,0,0" VerticalAlignment="Top" Width="329" Foreground="Black" FontSize="18" Background="#FFDADCE0" BorderBrush="#FFDADCE0"/>
+            <Button x:Name="BTRejestracja" Content="Rejestracja" HorizontalAlignment="Left" Margin="0,188,0,0" VerticalAlignment="Top" Width="146" Click="BT_Rejestracja_Click" Height="46" Foreground="White" FontSize="18" Background="#FFB0B0B0"/>
+            <Label Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Width="55" FontSize="18" Height="36" Foreground="White"/>
+            <Label Content="Hasło" HorizontalAlignment="Left" Height="38" Margin="0,93,0,0" VerticalAlignment="Top" Width="55" FontSize="18" Foreground="White"/>
+        </Grid>
+        <Label Content="Kalkulator BMI, WHR, zapotrzebowania kalorycznego i wagi iedalnej" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" Height="75" Width="672" FontSize="22" Foreground="White"/>
     </Grid>
 </Window>
