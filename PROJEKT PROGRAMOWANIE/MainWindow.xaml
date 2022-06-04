@@ -5,40 +5,62 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PROJEKT_PROGRAMOWANIE"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
+        Title="MainWindow" Height="500" Width="800"
         WindowStartupLocation="Manual"
         Left="500" Top="250">
     <Grid Background="#FF1D1D1D">
-        
-        <Button x:Name="ZapiszDane" Content="zapisz do pliku .txt" HorizontalAlignment="Left" Margin="417,312,0,0" VerticalAlignment="Top" Width="206" Height="40" Click="ZapiszDane_Click" FontSize="16" Foreground="White" BorderBrush="#FFA6A6A6" Background="#FF00ADFD"/>
-        <Label Content="Użytkownik:" HorizontalAlignment="Left" Margin="420,33,0,0" VerticalAlignment="Top" Width="104" Background="#FF1D1D1D" Foreground="White" FontSize="16"/>
-        <TextBox x:Name="TBUzytkownik" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="529,36,0,0" FontSize="16" Background="#FFDADCE0"/>
-        <TextBox x:Name="TBWaga" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="186,31,0,0" FontSize="16" Background="#FFDADCE0"/>
-        <TextBox x:Name="TBWzrost" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="186,74,0,0" FontSize="16" Background="#FFDADCE0"/>
-        <TextBox x:Name="TBObwodTalia" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="186,114,0,0" FontSize="16" Background="#FFDADCE0"/>
-        <TextBox x:Name="TBObwodBiodra" HorizontalAlignment="Left" Height="23" Margin="186,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16" Background="#FFDADCE0"/>
-        <TextBox x:Name="TBWiek" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="186,195,0,0" FontSize="16" Background="#FFDADCE0"/>
-        <ComboBox x:Name="CBPlec" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="186,237,0,0" SelectionChanged="CBPlec_SelectionChanged" FontSize="16" Background="#FFDADCE0"/>
-        <ComboBox x:Name="CBAktywnosc" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="186,278,0,0" SelectionChanged="CBAktywnosc_SelectionChanged" FontSize="16" Background="#FFDADCE0"/>
-        <ComboBox x:Name="CBCel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="186,315,0,0" SelectionChanged="CBCel_SelectionChanged" FontSize="16" Background="#FFDADCE0"/>
-        <Grid Margin="36,31,594,72">
-            <Label Content="waga" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Height="34" Background="#FF1D1D1D" Foreground="White" FontSize="16"/>
-            <Label Content="wzrost" HorizontalAlignment="Left" Margin="0,39,0,0" VerticalAlignment="Top" Width="80" Height="39" Background="#FF1D1D1D" FontSize="16" Foreground="White"/>
-            <Label Content="obwód w talii" HorizontalAlignment="Left" Margin="0,83,0,0" VerticalAlignment="Top" Width="110" Height="36" Background="#FF1D1D1D" FontSize="16" Foreground="White"/>
-            <Label Content="wiek" HorizontalAlignment="Left" Margin="0,164,0,0" VerticalAlignment="Top" Width="95" Height="36" Background="#FF1D1D1D" FontSize="16" Foreground="White"/>
-            <Label Content="płeć" HorizontalAlignment="Left" Margin="0,205,0,0" VerticalAlignment="Top" Width="80" Height="41" Background="#FF1D1D1D" FontSize="16" Foreground="White"/>
-            <Label Content="aktywność fizyczna" HorizontalAlignment="Left" Margin="0,251,0,0" VerticalAlignment="Top" Width="142" Height="31" Background="#FF1D1D1D" FontSize="16" Foreground="White"/>
-            <Label Content="cel" HorizontalAlignment="Left" Margin="0,284,0,0" VerticalAlignment="Top" Width="110" Height="32" Background="#FF1D1D1D" FontSize="16" Foreground="White"/>
-            <Label Content="obwód w biodrach" HorizontalAlignment="Left" Margin="0,124,0,0" VerticalAlignment="Top" Background="#FF1D1D1D" FontSize="16" Foreground="White"/>
-        </Grid>
-        <ListBox x:Name="LBWyniki" HorizontalAlignment="Left" Height="214" Margin="420,79,0,0" VerticalAlignment="Top" Width="340" FontSize="16" Background="#FFDADCE0">
-        </ListBox>
-        <Button x:Name="Historia" Content="historia" HorizontalAlignment="Left" Margin="641,312,0,0" VerticalAlignment="Top" Width="119" Height="40" Click="Historia_Click" FontSize="16" Foreground="White" BorderBrush="#FFA6A6A6" Background="#FF00ADFD"/>
-        <Button x:Name="Policz" Content="Policz" HorizontalAlignment="Left" Margin="186,357,0,0" VerticalAlignment="Top" Width="120" Click="Policz_Click" Height="40" FontSize="16" Foreground="White" BorderBrush="#FFA6A6A6" Background="#FF00ADFD"/>
-        <Button x:Name="WyczyscDane" Content="Wyczyść wszystko" HorizontalAlignment="Left" Margin="417,362,0,0" VerticalAlignment="Top" Width="206" Click="WyczyscDane_Click" Height="35" FontSize="16" Foreground="White" BorderBrush="#FFA6A6A6" Background="#FF77ABC3"/>
-        <Button x:Name="Wyloguj" Content="Wyloguj" HorizontalAlignment="Left" Margin="679,36,0,0" VerticalAlignment="Top" Width="81" Height="28" Click="Wyloguj_Click" FontSize="16" Foreground="White" BorderBrush="#FFA6A6A6" Background="#FF00ADFD"/>
-        <Button x:Name="WyczyscWyniki" Content="Wyczyść wyniki" HorizontalAlignment="Left" Margin="641,362,0,0" VerticalAlignment="Top" Width="119" Height="35" Click="WyczyscWyniki_Click" FontSize="16" Foreground="White" BorderBrush="#FFA6A6A6" Background="#FF77ABC3"/>
-        <CheckBox x:Name="InfoAktywnosc" Margin="325,282,436,106">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="156*"/>
+            <ColumnDefinition Width="132*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="185*"/>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="192*"/>
+            <ColumnDefinition Width="30"/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="ZapiszDane" Content="zapisz do pliku .txt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="233" Height="41" Click="ZapiszDane_Click" FontSize="16" Foreground="White" BorderBrush="#FFA6A6A6" Background="#FF00ADFD" Grid.Column="4" Grid.Row="8" Grid.ColumnSpan="3"/>
+        <Label Grid.Row="1" Grid.Column="4" Content="Użytkownik:" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="127" Background="#FF1D1D1D" Foreground="White" FontSize="16" Height="47" />
+        <TextBox Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="3" x:Name="TBUzytkownik" HorizontalAlignment="Left" Height="42" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="121" FontSize="16" Background="#FF1D1D1D" Foreground="White" Margin="127,0,0,0" BorderBrush="#FF1D1D1D"  />
+        <TextBox Grid.Row="1" Grid.Column="2" x:Name="TBWaga" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132" FontSize="16" Background="#FFDADCE0" />
+        <TextBox Grid.Row="2" Grid.Column="2" x:Name="TBWzrost" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132" FontSize="16" Background="#FFDADCE0" />
+        <TextBox Grid.Row="3" Grid.Column="2" x:Name="TBObwodTalia" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132" FontSize="16" Background="#FFDADCE0" />
+        <TextBox Grid.Row="4" Grid.Column="2" x:Name="TBObwodBiodra" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132" FontSize="16" Background="#FFDADCE0" />
+        <TextBox Grid.Row="5" Grid.Column="2" x:Name="TBWiek" HorizontalAlignment="Left" Height="28" Text="" VerticalAlignment="Top" Width="132" FontSize="16" Background="#FFDADCE0" />
+        <ComboBox Grid.Row="6" Grid.Column="2" x:Name="CBPlec" HorizontalAlignment="Left" Height="28" Text="" VerticalAlignment="Top" Width="132" SelectionChanged="CBPlec_SelectionChanged" FontSize="16" Background="#FFDADCE0" />
+        <ComboBox Grid.Row="7" Grid.Column="2" x:Name="CBAktywnosc" HorizontalAlignment="Left" VerticalAlignment="Top" Width="132" SelectionChanged="CBAktywnosc_SelectionChanged" FontSize="16" Background="#FFDADCE0" Height="29" />
+        <ComboBox Grid.Row="8" Grid.Column="2" x:Name="CBCel" HorizontalAlignment="Left" Height="28" Text="" VerticalAlignment="Top" Width="132" SelectionChanged="CBCel_SelectionChanged" Background="#FFDADCE0" />
+        <Label Grid.Row="1" Grid.Column="1" Content="waga" HorizontalAlignment="Left" VerticalAlignment="Top" Width="156" Height="47" Background="#FF1D1D1D" Foreground="White" FontSize="16"/>
+        <Label Grid.Row="2" Grid.Column="1" Content="wzrost" HorizontalAlignment="Left" VerticalAlignment="Top" Width="151" Height="48" Background="#FF1D1D1D" FontSize="16" Foreground="White" Grid.RowSpan="2"/>
+        <Label Grid.Row="3" Grid.Column="1" Content="obwód w talii" HorizontalAlignment="Left" VerticalAlignment="Top" Width="151" Height="40" Background="#FF1D1D1D" FontSize="16" Foreground="White" Margin="0,6,0,0"/>
+        <Label Grid.Row="5" Grid.Column="1" Content="wiek" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="156" Height="46" Background="#FF1D1D1D" FontSize="16" Foreground="White"/>
+        <Label Grid.Row="6" Grid.Column="1" Content="płeć" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="156" Height="47" Background="#FF1D1D1D" FontSize="16" Foreground="White"/>
+        <Label Grid.Row="7" Grid.Column="1" Content="aktywność fizyczna" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="156" Height="47" Background="#FF1D1D1D" FontSize="16" Foreground="White"/>
+        <Label Grid.Row="8" Grid.Column="1" Content="cel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="156" Height="46" Background="#FF1D1D1D" FontSize="16" Foreground="White"/>
+        <Label Grid.Row="4" Grid.Column="1" Content="obwód w biodrach" HorizontalAlignment="Left"  VerticalAlignment="Top" Background="#FF1D1D1D" FontSize="16" Foreground="White" Height="47" Grid.RowSpan="2" Width="156"/>
+
+        <ListBox Grid.Row="2" Grid.RowSpan="6" Grid.Column="4" Grid.ColumnSpan="3"  x:Name="LBWyniki" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  FontSize="16" Background="#FFDADCE0" Margin="0,20,0,18"/>
+
+        <Button Grid.Row="8" Grid.Column="6" x:Name="Historia" Content="historia" HorizontalAlignment="Right"  VerticalAlignment="Top" Width="137" Height="41" Click="Historia_Click" FontSize="16" Foreground="White" BorderBrush="#FFA6A6A6" Background="#FF00ADFD"/>
+        <Button Grid.Row="9" Grid.Column="2"  x:Name="Policz" Content="Policz" HorizontalAlignment="Center" VerticalAlignment="Center" Width="122" Click="Policz_Click" Height="41" FontSize="16" Foreground="White" BorderBrush="#FFA6A6A6" Background="#FF00ADFD" Margin="7,5,3,0" />
+        <Button Grid.Row="9" Grid.Column="4" x:Name="WyczyscDane" Content="Wyczyść wszystko" HorizontalAlignment="Left" VerticalAlignment="Top" Width="233" Click="WyczyscDane_Click" Height="41" FontSize="16" Foreground="White" BorderBrush="#FFA6A6A6" Background="#FF77ABC3" Margin="0,5,0,0" RenderTransformOrigin="-0.19,0.959" Grid.ColumnSpan="3"/>
+        <Button Grid.Row="1" Grid.Column="6" x:Name="Wyloguj" Content="Wyloguj" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="122" Height="42" Click="Wyloguj_Click" FontSize="16" Foreground="White" BorderBrush="#FFA6A6A6" Background="#FF00ADFD" Margin="70,0,0,0" />
+        <Button Grid.Row="9" Grid.Column="6" x:Name="WyczyscWyniki" Content="Wyczyść wyniki" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="137" Height="41" Click="WyczyscWyniki_Click" FontSize="16" Foreground="White" BorderBrush="#FFA6A6A6" Background="#FF77ABC3" Margin="55,5,0,0" />
+        <CheckBox x:Name="InfoAktywnosc" Margin="65,30,67,12" Grid.Column="2" Grid.Row="6">
             <WrapPanel>
                 <Popup IsOpen="{Binding ElementName=InfoAktywnosc, Path=IsChecked}" Placement="Right" PopupAnimation="Fade" AllowsTransparency="True" VerticalOffset="-30" HorizontalOffset="5">
                     <TextBox x:Name="TBInfoAktywnosc" MinWidth="100" MinHeight="70" Height="80" Width="435"></TextBox>

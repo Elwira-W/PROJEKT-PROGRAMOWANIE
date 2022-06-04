@@ -17,7 +17,7 @@
             <ColumnDefinition  Width="400"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Calendar Grid.Column="0" SelectionMode="MultipleRange" DisplayMode="Year"  RenderTransformOrigin="0.5,0.5" SelectedDatesChanged="Calendar_SelectedDatesChanged" HorizontalAlignment="Center" VerticalAlignment="Center" Height="198" Width="247" Margin="80,56,73,45">
+        <Calendar Grid.Column="0" SelectionMode="MultipleRange" DisplayMode="Year"  RenderTransformOrigin="0.5,0.5" SelectedDatesChanged="Calendar_SelectedDatesChanged" HorizontalAlignment="Center" VerticalAlignment="Center" Height="198" Width="247" >
             <Calendar.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFE4EAF0" Offset="0"/>
@@ -35,8 +35,8 @@
                 </TransformGroup>
             </Calendar.RenderTransform>
         </Calendar>
-        <Button Grid.Row="1" Grid.Column="0" x:Name="Powrot" Content="Powrót" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="98" Height="49" Click="Powrot_Click" FontSize="16" Foreground="White" Background="#FF00ADFD" Margin="151,0" />
-        <ListBox Grid.RowSpan="2" Grid.Column="1" x:Name="LBHistoria" HorizontalAlignment="Center" Height="331" VerticalAlignment="Center" Width="331" Background="#FFDADCE0" Margin="30,32,31,56" />
+        <Button Grid.Row="1" Grid.Column="0" x:Name="Powrot" Content="Powrót" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="98" Height="49" Click="Powrot_Click" FontSize="16" Foreground="White" Background="#FF00ADFD" />
+        <ListBox Grid.RowSpan="2" Grid.Column="1" x:Name="LBHistoria" HorizontalAlignment="Center" Height="341" VerticalAlignment="Center" Width="331" Background="#FFDADCE0" />
 
 
     </Grid>
