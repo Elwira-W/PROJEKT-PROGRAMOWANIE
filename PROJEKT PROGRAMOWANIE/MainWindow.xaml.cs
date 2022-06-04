@@ -66,7 +66,7 @@ namespace PROJEKT_PROGRAMOWANIE
         void OtworzOknoHistorii()
         {
             HistoryWindow historyWindow = new HistoryWindow(login);                                 //tworzenie instancji klasy HistoryWindow o nazwie "historyWindow" z przekazaniem loginu
-            historyWindow.Show();                                                                   //metoda .Show() otwiera obiekt "historyWindow" czyli otwiera nowe okno
+            historyWindow.ShowDialog();                                                                   //metoda .Show() otwiera obiekt "historyWindow" czyli otwiera nowe okno
             //this.Close();                                                                         //bieżące okno nie jest zamykane, żeby nie utracić właśnie wpisanych danych
         }
         private void ZapiszDane_Click(object sender, RoutedEventArgs e)                             //button "zapisz dane do pliku .txt"

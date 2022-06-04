@@ -9,6 +9,7 @@
         WindowStartupLocation="Manual"
         Left="500" Top="250">
     <Grid Background="#FF1D1D1D">
+        
         <Button x:Name="ZapiszDane" Content="zapisz do pliku .txt" HorizontalAlignment="Left" Margin="417,312,0,0" VerticalAlignment="Top" Width="206" Height="40" Click="ZapiszDane_Click" FontSize="16" Foreground="White" BorderBrush="#FFA6A6A6" Background="#FF00ADFD"/>
         <Label Content="Użytkownik:" HorizontalAlignment="Left" Margin="420,33,0,0" VerticalAlignment="Top" Width="104" Background="#FF1D1D1D" Foreground="White" FontSize="16"/>
         <TextBox x:Name="TBUzytkownik" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="529,36,0,0" FontSize="16" Background="#FFDADCE0"/>
