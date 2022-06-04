@@ -1,7 +1,7 @@
 # PROJEKT-PROGRAMOWANIE
 ENG version ---------------------------------------------------------
 
-Program created for a final project in programming at my university.
+Program created for a final project in programming class at my university.
 
 It allows you to calculate four indicators: BMI (Body Mass Index), WHR (Waist Hip Ratio), caloric demand and ideal weight.
 
