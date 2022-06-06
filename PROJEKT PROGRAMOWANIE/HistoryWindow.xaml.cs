@@ -61,27 +61,6 @@ namespace PROJEKT_PROGRAMOWANIE
             this.Close();                                                                 //metoda .Close() zamyka bieżące okno
         }                                                                                 //nie tworzymy instancji klasy MainWindow (okna mainWindow) bo jest ono utworzone i cały czas otwarte
 
-        //private void Wyswietl_Click(object sender, RoutedEventArgs e)
-        //{
-        //    string sciezkaDane = login + "Dane.txt";
-        //    string data = "20/05/2022";
-
-        //    if (File.Exists(sciezkaDane))
-        //    {
-        //        string danePlik;
-        //        FileStream plikTekstowy = new FileStream(sciezkaDane, FileMode.Open, FileAccess.Read);
-        //        StreamReader strum2 = new StreamReader(plikTekstowy);
-
-        //        do
-        //        {
-        //            danePlik = strum2.ReadLine();
-        //            if (danePlik != null)
-        //            {
-        //                LBHistoria.Items.Add(danePlik);
-        //            }
-        //        } while (danePlik != null);
-        //    }
-        //}
 
         private void Calendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)      //zmiana wyboru w kalendarzu
         {

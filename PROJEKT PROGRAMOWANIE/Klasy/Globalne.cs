@@ -20,9 +20,5 @@ namespace PROJEKT_PROGRAMOWANIE
     {
         public static List<string> ListaDanych = new List<string>();
         public static string CBPlec, CBAktywnosc, CBCel;
-        //public static List<string> ListaWynikow = new List<string>();
-        //public static string[] tab = new string[10];
-        //public static int plec;
-
     }
 }
